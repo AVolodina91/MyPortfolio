@@ -1,0 +1,296 @@
+/* Шрифты */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Poiret+One&family=Roboto+Mono&family=Roboto:wght@100;400&family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@300&family=IBM+Plex+Serif:ital,wght@1,300;1,400&family=Montserrat:wght@200&family=Mulish:ital,wght@1,200&family=Open+Sans:ital@1&family=Overpass&family=Playfair+Display:ital,wght@1,400;1,500&family=Poiret+One&family=Roboto+Mono&family=Roboto:wght@100;400&family=Satisfy&display=swap');
+body{
+    font-family:"Montserrat", sans-serif;
+    font-size: 21px;
+    line-height: 2.0em;       /*Расстояние между строк*/
+    font-weight: normal;      /* bold */
+    text-decoration: none;    /* underline, line-through */
+    font-style: normal;       /* italic */    
+    word-spacing: normal;     /* Отступ между словами */
+
+    /* font: normal 21px "Montserrat", sans-serif;*/
+
+    margin: 0;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    max-width: 1920px;
+    margin: auto;
+    
+}
+
+.box{
+    max-width: 90%;
+    margin: auto;
+    height: 670px;     
+}
+
+h3{
+    color: rgba(94, 120, 158, 0.46);
+    font-size: 19px;
+    word-spacing: 10px; 
+    font-weight: normal;
+    padding: 30px;
+    padding-bottom: 0px;
+    letter-spacing: 2px;
+}
+
+/* .card_c{
+    width: 1500px;
+    margin: 50px 30px;
+    padding: 20px;
+    text-align: right;
+    font-weight: bolder;
+    color: #5576a9;
+} */
+
+.card{
+   
+    width: 70%;
+    margin: 60px 50px;
+    /* background: rgba(254, 254, 254, 0.86); */
+    /* border-radius: 5px; */
+    /* box-shadow: 5px 5px 25px rgba(255, 255, 255, 0.25); */
+    text-align:justify;
+    text-indent: 50px;    
+    font-weight: bolder;
+    font-style: italic;
+    letter-spacing: 2px;
+    color: rgba(94, 120, 158, 0.78);
+    
+    
+}
+
+/* #header, .card{
+    margin-left: 18px;
+} */
+
+.blocks{
+    width: 90%;
+    margin: 33px auto;
+    padding: auto;
+    
+}
+.block{
+    width: 20%;
+    /*  background: rgb(180 198 214 / 96%); */
+    /* box-shadow: 5px 5px 25px rgba(180, 198, 214, 25%); */
+    text-align: center;
+    float: left;
+    box-sizing: border-box;
+    color: rgba(255, 255, 255, 0.86);
+    font-weight: bolder;     
+    font-size: 27px;
+}
+
+@media(max-width: 1400px){
+    .block{
+        float: none;
+    }
+}
+
+.link_a{
+    border-left: 2px solid rgba(94, 120, 158, 0.46);
+    padding: 0px 5px;
+    margin-left: 30px;
+}
+
+a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.86);
+    transition: 1s;
+    letter-spacing: 3px;
+}
+
+/* ПСЕВДОСЕЛЕКТОРЫ */
+/* Наведение */
+a:hover{
+    color: rgba(94, 120, 158, 0.96);
+    /* font-size: 2rem; */
+   /* background: rgba(255, 255, 255, 0.86);
+    border-radius: 5px; 
+    padding: 2px; */
+}
+
+/* Переход по ссылке*/
+/* a:visited{
+    color: rgba(94, 120, 158, 0.78);
+} */
+
+/* пока нажата кнопка! */
+/* a:active{
+    color: red;
+} */
+
+.card_list{
+    width: 86%;
+    margin: 70px 0px;
+    padding: 30px;
+    background: rgba(94, 120, 158, 0.78);
+    /* background: rgba(254, 254, 254, 0.86); */
+    border-radius: 10px;
+    box-shadow: 3px 3px 15px rgba(94, 120, 158, 0.25);      
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    color: rgba(254, 254, 254, 0.86);
+}
+
+.card_list li{
+    margin-bottom: 7px;    
+}
+
+.l1{
+    margin-left: 30px;
+    list-style: none; 
+}
+
+.l2{                            /* inline */
+    margin-left: 38px;
+    list-style: none;
+    /* border-bottom: 1px solid rgba(254, 254, 254, 0.86); */
+    display: inline;
+}
+
+.l3{                            /* inline-block */
+    margin-left: 38px;
+    width: 25%;
+    list-style: none;
+    border: 1px solid rgba(254, 254, 254, 0.86);
+    border-radius: 5px;
+    display: inline-block;
+   box-sizing: border-box;
+   text-align: center;
+}
+
+.table{
+    width: 100%;    
+    margin: 70px 0px;
+    padding: 5px;    
+    border: 1px solid rgba(94, 120, 158, 0.78);
+    text-align: left;
+    background: rgba(254, 254, 254, 0.86);    
+    /* background: rgba(254, 254, 254, 0.86); */
+    border-radius: 10px;
+    /* box-shadow: 5px 5px 25px rgba(255, 255, 255, 0.25); */    
+    /* letter-spacing: 2px; */
+    word-spacing: 5px;
+    color: rgba(94, 120, 158, 0.78);
+}
+
+.table td:nth-child(1){
+    text-align: center;
+}
+
+.table td:nth-child(even){
+    background: rgba(94, 120, 158, 0.64);
+    color: rgba(254, 254, 254, 0.86);
+    border-radius: 5px;
+    padding: 0px 5px;
+}
+
+.table td:nth-child(3){    
+    padding: 0px 10px;
+}
+
+.table td:hover{
+    background: rgba(94, 120, 158, 0.2);
+    border-radius: 5px;
+}
+
+.navbar{
+    margin: 50px auto;
+    width: 90%;    
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background: rgba(94, 120, 158, 0.78);
+    box-shadow: 3px 3px 10px rgba(94, 120, 158, 0.25);     
+}
+
+.navbar ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px 20px;
+    text-align: center;
+    display: flex;
+}
+
+.navbar ul li{
+    width: 20%;
+    /* margin-right: 10px; */
+    padding: 10px;
+}
+
+/* .navbar ul li:hover{
+    background: rgba(254, 254, 254, 0.5);
+    border-radius: 5px;
+} */
+
+/* .navbar ul li:last-child{
+    margin-right: 0;
+} */
+
+.form{
+    margin: 30px 20px;
+    background: rgba(94, 120, 158, 0.78);
+    border-radius: 5px;
+    padding: 50px;
+    position: relative;
+}
+
+.form-group label{
+   display: block;
+   color: rgba(255, 255, 255, 0.86);
+}
+
+.form-row{
+    display: flex;
+}
+
+.form-row .form-group {
+ margin-bottom: 40px;
+ /* margin-right: 10px; */
+ width: 50%;
+}
+
+/* .form-row .form-group:last-child {
+    margin-right: 0;
+} */
+
+
+.form-group input, .form-group textarea{
+    width: 50%;
+    box-sizing: border-box;
+    border: none;
+    outline: none; 
+    background: transparent; /* прозрачность */
+    border-bottom: 1.5px solid rgba(94, 120, 158, 0.86);
+    font-size: 21px;
+    color: rgba(255, 255, 255, 1);
+    font-family: inherit;  
+}
+
+.btn{
+    background: rgba(94, 120, 158, 0.86);
+    padding: 20px 30px;
+    color: rgba(255, 255, 255, 1);
+    border:none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 19px;
+    position:absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    }
+.btn:hover{
+        opacity: 0.7;
+    }
